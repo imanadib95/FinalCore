@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Nov 29 18:37:49 2016
+// Written by: Map P.20131013 on Tue Nov 29 19:41:15 2016
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -18,13 +18,10 @@ COMP "CF" LOCATE = SITE "N14" LEVEL 1;
 COMP "ColorOut<6>" LOCATE = SITE "V7" LEVEL 1;
 COMP "CG" LOCATE = SITE "L14" LEVEL 1;
 COMP "ColorOut<7>" LOCATE = SITE "U7" LEVEL 1;
-COMP "up" LOCATE = SITE "A8" LEVEL 1;
 COMP "AN0" LOCATE = SITE "N16" LEVEL 1;
 COMP "AN1" LOCATE = SITE "N15" LEVEL 1;
 COMP "AN2" LOCATE = SITE "P18" LEVEL 1;
 COMP "AN3" LOCATE = SITE "P17" LEVEL 1;
-COMP "left" LOCATE = SITE "C4" LEVEL 1;
-COMP "down" LOCATE = SITE "C9" LEVEL 1;
 COMP "JA<4>" LOCATE = SITE "M10" LEVEL 1;
 COMP "JA<5>" LOCATE = SITE "N9" LEVEL 1;
 COMP "JA<6>" LOCATE = SITE "U11" LEVEL 1;
@@ -37,17 +34,8 @@ COMP "JD<4>" LOCATE = SITE "D12" LEVEL 1;
 COMP "JD<5>" LOCATE = SITE "C12" LEVEL 1;
 COMP "JD<6>" LOCATE = SITE "F12" LEVEL 1;
 COMP "JD<7>" LOCATE = SITE "E12" LEVEL 1;
-COMP "switches<0>" LOCATE = SITE "T5" LEVEL 1;
-COMP "switches<1>" LOCATE = SITE "V8" LEVEL 1;
-COMP "switches<2>" LOCATE = SITE "U8" LEVEL 1;
-COMP "switches<3>" LOCATE = SITE "N8" LEVEL 1;
-COMP "switches<4>" LOCATE = SITE "M8" LEVEL 1;
-COMP "switches<5>" LOCATE = SITE "V9" LEVEL 1;
-COMP "switches<6>" LOCATE = SITE "T9" LEVEL 1;
-COMP "switches<7>" LOCATE = SITE "T10" LEVEL 1;
 COMP "Hsync" LOCATE = SITE "N6" LEVEL 1;
 COMP "Vsync" LOCATE = SITE "P7" LEVEL 1;
-COMP "right" LOCATE = SITE "D9" LEVEL 1;
 COMP "rstBtn" LOCATE = SITE "B8" LEVEL 1;
 COMP "ExternalClk" LOCATE = SITE "V10" LEVEL 1;
 SCHEMATIC END;

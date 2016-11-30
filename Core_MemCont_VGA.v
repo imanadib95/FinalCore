@@ -18,14 +18,17 @@
 // Additional Comments: 
 //	
 //////////////////////////////////////////////////////////////////////////////////
-module Core_MemCont_VGA(up,down,left,right,ExternalClk,ColorOut,Hsync,Vsync, CA,CB,CC,CD,CE,CF,CG,DP,AN0, AN1, AN2, AN3,rstBtn,switches,JA, JD, JC);
-	input up,down,left,right;
+module Core_MemCont_VGA(//up,down,left,right,
+ExternalClk,ColorOut,Hsync,Vsync, 
+CA,CB,CC,CD,CE,CF,CG,DP,AN0, AN1, AN2, AN3,rstBtn,//switches,
+JA, JD, JC);
+//	input up,down,left,right;
 	input ExternalClk;
 	output [7:0] ColorOut;
 	output Hsync, Vsync;
 	output CA,CB,CC,CD,CE,CF,CG,DP,AN0, AN1, AN2, AN3;
 	input rstBtn;
-	input [7:0] switches;
+//	input [7:0] switches;
 	input [7:4] JA; 
 	input [7:4] JC;
 	input [7:4] JD;
@@ -68,7 +71,7 @@ module Core_MemCont_VGA(up,down,left,right,ExternalClk,ColorOut,Hsync,Vsync, CA,
 	
 	VGA_Controller VGA(clk, VGADataOut[7:0],VGAAddress,Hsync,Vsync,ColorOut);
 	
-	// Counter Instantiations
+/*	// Instantiations for controlling cursor with onboard buttons
 	
 	
 	debounce upbtn(1'b0, clk, up, updb);
@@ -81,8 +84,9 @@ module Core_MemCont_VGA(up,down,left,right,ExternalClk,ColorOut,Hsync,Vsync, CA,
 	
 	debounce leftbtn(1'b0, clk, left, leftdb);
 	
-	buttonCount LRcounter(clk,rightdb,leftdb,1'b0,LRcount);
+	buttonCount LRcounter(clk,rightdb,leftdb,1'b0,LRcount);*/
 	
+	// Seven Segment Display for Seeing Cursor position on screen
 	SevSegDisplay4DigController DisplayController(clk,1'b0,{xPixelPos[7:0],yPixelPos[7:0]},ContBinOUT,en_bus);
 	
 	BinaryTo4DigHex7SegDisplay	 DisplayConverter(en_bus, ContBinOUT,CA,CB,CC,CD,CE,CF,CG,DP,AN0, AN1, AN2, AN3);

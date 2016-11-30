@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-11-29T16:30:31</DateModified>
+  <DateModified>2016-11-29T19:13:22</DateModified>
   <ModuleName>Core_MemCont_VGA</ModuleName>
   <SummaryTimeStamp>2016-11-29T16:27:36</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/imana/OneDrive/Documents/GitHub/Core/iseconfig/Core_MemCont_VGA.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/imana/OneDrive/Documents/GitHub/Core\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/iseconfig/Core_MemCont_VGA.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/imana/OneDrive/Documents/GitHub/FinalCore\</ImplementationReportsDirectory>
   <DateInitialized>2016-11-16T12:10:12</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

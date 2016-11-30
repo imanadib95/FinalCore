@@ -19,7 +19,7 @@ module CoreTop(clk,ReadData, Address,WriteData,WriteEnable,R1Out,R2Out);
 	 output [15:0] R1Out,R2Out;
 	 
 	 reg [15:0] PC,NextPC;
-	 reg [31:0] Instruction,NextInstruction;
+	 reg [31:16] Instruction,NextInstruction;
 	 reg [1:0] PS, NS;
 	 
 	 initial NextPC = 16'd1;  
@@ -67,7 +67,7 @@ module CoreTop(clk,ReadData, Address,WriteData,WriteEnable,R1Out,R2Out);
 			 Fetch: 
 			 begin 
 				NextInstruction[31:16] <= ReadData;
-				NextInstruction[15:0]  <=Instruction[15:0];
+				//NextInstruction[15:0]  <=Instruction[15:0];
 				NextPC                 <= PC;
 			 end 
 			 Receive:
@@ -78,12 +78,12 @@ module CoreTop(clk,ReadData, Address,WriteData,WriteEnable,R1Out,R2Out);
 				// Check for Load
 				if(Instruction[31:28] == load ||Instruction[31:28] == store || Instruction[31:28] == beq) // if load or store instruction
 				begin
-					NextInstruction[15:0] <= ReadData; // Latch in second half of the instruction
+					//NextInstruction[15:0] <= ReadData; // Latch in second half of the instruction
 					NextPC <= PC+2'd2; // Jump to the next instruction, skipping the second word of the load/store instruction
 				end
 				else
 				begin
-					NextInstruction[15:0] <= 16'd0;
+				//	NextInstruction[15:0] <= 16'd0;
 				end
 				
 				// beq instruction - set PC in the case of two registers being equal

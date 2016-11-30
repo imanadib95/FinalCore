@@ -46,7 +46,7 @@ module RegisterFile(clk,AReg,BReg,WriteData,WriteReg,WE,Aout,Bout,R1Out,R2Out);
 		initial R8 =16'd0;
 		initial R9 =16'd0;
 		initial R10 =16'd10;
-		initial R11 =16'b0011_1111_1111_1111;
+		initial R11 =16'b0111_1111_1111_0000;
 		initial R12 =16'd1000;
 		initial R13 =16'b1111_1111_1111_1111;
 		initial R14 =16'd0;

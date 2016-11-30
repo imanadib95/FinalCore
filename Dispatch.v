@@ -35,7 +35,7 @@ module Dispatch(Address, RAMData, encLR, encUD, encColor, accelFlag,weIn, WriteD
 	output [14:0] AddressOut; 		 // Address signal to RAM
 	output accBeenRead;
 
-	assign AcceBeenRead = (Address[23:16]==8'b0000_0011); // Send out "Has been read" to accelerometer
+	assign accBeenRead = (Address[23:16]==8'b0000_0011); // Send out "Has been read" to accelerometer
 	assign weOut = weIn; // Core controls when writing directly
 	assign WriteDataOut = WriteDataIn; // Core controls when writing directly
 	assign AddressOut = Address[14:0];                 
