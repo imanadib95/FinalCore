@@ -338,7 +338,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1480549752" xil_pn:in_ck="-7971658520940435078" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1479199203522240501" xil_pn:start_ts="1480549738">
+    <transform xil_pn:end_ts="1480550118" xil_pn:in_ck="-7971658520940435078" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1479199203522240501" xil_pn:start_ts="1480550102">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -360,11 +360,14 @@
     <transform xil_pn:end_ts="1480473635" xil_pn:in_ck="-6505133828529527732" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3108471168689364506" xil_pn:start_ts="1480473635">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
     </transform>
     <transform xil_pn:end_ts="1480473641" xil_pn:in_ck="8399601310354672782" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1000754615177606051" xil_pn:start_ts="1480473635">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Core_MemCont_VGA.bld"/>
       <outfile xil_pn:name="Core_MemCont_VGA.ngd"/>
@@ -375,7 +378,9 @@
     <transform xil_pn:end_ts="1480473677" xil_pn:in_ck="7268914435424155450" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1480473641">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Core_MemCont_VGA.pcf"/>
       <outfile xil_pn:name="Core_MemCont_VGA_map.map"/>
       <outfile xil_pn:name="Core_MemCont_VGA_map.mrp"/>
@@ -390,7 +395,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Core_MemCont_VGA.ncd"/>
       <outfile xil_pn:name="Core_MemCont_VGA.pad"/>
       <outfile xil_pn:name="Core_MemCont_VGA.par"/>
@@ -459,7 +466,9 @@
     <transform xil_pn:end_ts="1480473701" xil_pn:in_ck="3109425610916319406" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1480473695">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="Core_MemCont_VGA.twr"/>
       <outfile xil_pn:name="Core_MemCont_VGA.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

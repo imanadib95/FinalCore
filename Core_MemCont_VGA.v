@@ -29,9 +29,9 @@ JA, JD, JC);
 	output CA,CB,CC,CD,CE,CF,CG,DP,AN0, AN1, AN2, AN3;
 	input rstBtn;
 //	input [7:0] switches;
-	input [7:4] JA; 
-	input [7:4] JC;
-	input [7:4] JD;
+	input [6:4] JA; 
+	input [6:4] JC;
+	input [6:4] JD;
 	// Internal Clock Buffers
 	IBUFG g(.I(ExternalClk), .O(InternalClk));
 	BUFG a(.I(InternalClk), .O(clk));

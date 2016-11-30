@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: Core_MemCont_VGA.prj
 
@@ -369,7 +369,6 @@ Unit <BinaryTo4DigHex7SegDisplay> synthesized.
 Synthesizing Unit <PmodEnc_1>.
     Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\FinalCore\PmodEnc.v".
         MAX = 8'b10011111
-WARNING:Xst:647 - Input <JA<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <PmodEnc_1> synthesized.
@@ -423,7 +422,6 @@ Unit <Encoder> synthesized.
 Synthesizing Unit <PmodEnc_2>.
     Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\FinalCore\PmodEnc.v".
         MAX = 8'b01110111
-WARNING:Xst:647 - Input <JA<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <PmodEnc_2> synthesized.
@@ -431,7 +429,6 @@ Unit <PmodEnc_2> synthesized.
 Synthesizing Unit <PmodEnc_3>.
     Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\FinalCore\PmodEnc.v".
         MAX = 8'b11111111
-WARNING:Xst:647 - Input <JA<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <PmodEnc_3> synthesized.
@@ -709,7 +706,7 @@ Slice Logic Distribution:
    Number of unique control sets:        41
 
 IO Utilization: 
- Number of IOs:                          36
+ Number of IOs:                          33
  Number of bonded IOBs:                  33  out of    232    14%  
 
 Specific Feature Utilization:
@@ -847,14 +844,14 @@ ExternalClk    |   10.329|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 13.00 secs
-Total CPU time to Xst completion: 13.22 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.51 secs
  
 --> 
 
-Total memory usage is 300924 kilobytes
+Total memory usage is 300860 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    7 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
 Number of infos    :   11 (   0 filtered)
 

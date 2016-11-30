@@ -30,7 +30,7 @@ module PmodEnc(
 	 // 										Port Declarations
 	 // ===========================================================================
     input clk;
-    input [7:4] JA;
+    input [6:4] JA;
     //output [3:0] an;
     //output [6:0] seg;
     output [7:0] Led;
