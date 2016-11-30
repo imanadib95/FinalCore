@@ -1,0 +1,10 @@
+Command line:
+   Core_MemCont_VGA_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62747
+
+Tue Nov 29 16:32:40 2016
+
+
+ Elaboration Time: 0.078125 sec
