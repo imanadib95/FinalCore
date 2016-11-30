@@ -235,3 +235,11 @@ par -w -intstyle ise -ol high -mt off Core_MemCont_VGA_map.ncd Core_MemCont_VGA.
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Core_MemCont_VGA.twx Core_MemCont_VGA.ncd -o Core_MemCont_VGA.twr Core_MemCont_VGA.pcf -ucf Core_MemCont_VGA.ucf 
 xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.syr" 
 xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.syr" 
+xst -intstyle ise -ifn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.xst" -ofn "C:/Users/imana/OneDrive/Documents/GitHub/FinalCore/Core_MemCont_VGA.syr" 

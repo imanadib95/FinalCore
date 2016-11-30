@@ -18,7 +18,9 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module RegisterFile(clk,AReg,BReg,WriteData,WriteReg,WE,Aout,Bout,R1Out,R2Out);
+module RegisterFile(clk,AReg,BReg,WriteData,WriteReg,WE,Aout,Bout
+//R1Out,R2Out
+);
 	 input clk;
 	 input [3:0] AReg;
     input [3:0] BReg;
@@ -28,9 +30,9 @@ module RegisterFile(clk,AReg,BReg,WriteData,WriteReg,WE,Aout,Bout,R1Out,R2Out);
     output reg[15:0] Aout;
     output reg[15:0] Bout;
 	 // Debugging Outputs
-	 output [15:0] R1Out,R2Out;
-	 assign R1Out = R1;
-	 assign R2Out = R2;
+//	 output [15:0] R1Out,R2Out;
+//	 assign R1Out = R1;
+//	 assign R2Out = R2;
 	 // Create Registers (16x16)
 	 reg [15:0] R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11,R12,R13,R14,R15;
 	 

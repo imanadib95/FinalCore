@@ -10,15 +10,17 @@
 // Target Devices: 
 // Tool versions: 
 //////////////////////////////////////////////////////////////////////////////////
-module CoreTop(clk,ReadData, Address,WriteData,WriteEnable,R1Out,R2Out);
+module CoreTop(clk,ReadData, Address,WriteData,WriteEnable
+//,R1Out,R2Out
+);
     input clk;
 	 input [15:0] ReadData;
 	 output reg [23:0] Address;
     output reg [15:0] WriteData;
     output reg WriteEnable;
-	 output [15:0] R1Out,R2Out;
+	// output [15:0] R1Out,R2Out;
 	 
-	 reg [15:0] PC,NextPC;
+	 reg [14:0] PC,NextPC;
 	 reg [31:16] Instruction,NextInstruction;
 	 reg [1:0] PS, NS;
 	 
@@ -90,7 +92,7 @@ module CoreTop(clk,ReadData, Address,WriteData,WriteEnable,R1Out,R2Out);
 				if (Instruction[31:28] == beq)
 				begin
 					if(eqFlag) // if equal
-						NextPC <= ReadData; // set NextPC to the label
+						NextPC <= ReadData[14:0]; // set NextPC to the label
 					else // otherwise
 						NextPC <= PC + 2'd2; // PC Increments to the next instruction
 				end
@@ -98,7 +100,7 @@ module CoreTop(clk,ReadData, Address,WriteData,WriteEnable,R1Out,R2Out);
 				if (Instruction[31:28] == j)
 				begin
 					NextInstruction <=Instruction;
-					NextPC <= {8'b0000_0000,Instruction[27:16]}; // Assign next instruction;
+					NextPC <= {7'b0000_000,Instruction[27:16]}; // Assign next instruction;
 				end
 				 end 
 			 Execute:
@@ -211,7 +213,9 @@ module CoreTop(clk,ReadData, Address,WriteData,WriteEnable,R1Out,R2Out);
 	
 	
 	// Register File
-	 RegisterFile RF(clk,ARegSelect,BRegSelect,RFWriteData,RFWriteReg,RFWriteEnable,RFAout,RFBout,R1Out,R2Out);
+	 RegisterFile RF(clk,ARegSelect,BRegSelect,RFWriteData,RFWriteReg,RFWriteEnable,RFAout,RFBout
+	 //,R1Out,R2Out
+	 );
 
 	// ALU
 		ALU alu(RFAout,RFBout,Instruction[31:16],ALUOutput,eqFlag);

@@ -50,7 +50,9 @@ JA, JD, JC);
 	
 	wire [15:0] UDcount,LRcount;
 	// Instantiate modules
-	CoreTop Core(clk,CoreDataOut, CoreAddress,CoreWriteData,CoreWE,R1Out,R2Out);
+	CoreTop Core(clk,CoreDataOut, CoreAddress,CoreWriteData,CoreWE
+	//,R1Out,R2Out
+	);
 	
 	
 	// Kara, if you want to wire in the nobs, then go down to where xPixelPose, yPixelPos and colorPos

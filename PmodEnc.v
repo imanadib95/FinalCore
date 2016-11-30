@@ -42,7 +42,7 @@ module PmodEnc(
 	 wire [6:0] seg;
 	 wire [7:0] Led;
 	 
-	 parameter MAX = 8'd120;
+	 parameter [7:0] MAX = 8'd120;
 	 
 	 //wire [4:0] EncO;
 	 
