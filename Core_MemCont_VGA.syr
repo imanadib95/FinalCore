@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.25 secs
  
 --> Reading design: Core_MemCont_VGA.prj
 
@@ -159,7 +159,7 @@ Elaborating module <Dispatch>.
 
 Elaborating module <RAM>.
 WARNING:HDLCompiler:1499 - "C:\Users\imana\OneDrive\Documents\GitHub\FinalCore\ipcore_dir\RAM.v" Line 39: Empty module <RAM> remains a black box.
-WARNING:HDLCompiler:1127 - "C:\Users\imana\OneDrive\Documents\GitHub\FinalCore\Core_MemCont_VGA.v" Line 72: Assignment to accBeenRead ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\imana\OneDrive\Documents\GitHub\FinalCore\Core_MemCont_VGA.v" Line 67: Assignment to accBeenRead ignored, since the identifier is never used
 
 Elaborating module <VGA_Controller>.
 
@@ -185,9 +185,9 @@ Elaborating module <PmodEnc(MAX=255)>.
 
 Synthesizing Unit <Core_MemCont_VGA>.
     Related source file is "C:\Users\imana\OneDrive\Documents\GitHub\FinalCore\Core_MemCont_VGA.v".
-INFO:Xst:3210 - "C:\Users\imana\OneDrive\Documents\GitHub\FinalCore\Core_MemCont_VGA.v" line 61: Output port <accBeenRead> of the instance <Controller> is unconnected or connected to loadless signal.
-    Found 16-bit subtractor for signal <GND_1_o_yPixelPos[15]_sub_2_OUT> created at line 68.
-    Found 16-bit adder for signal <xPixelPos[15]_GND_1_o_add_0_OUT> created at line 67.
+INFO:Xst:3210 - "C:\Users\imana\OneDrive\Documents\GitHub\FinalCore\Core_MemCont_VGA.v" line 56: Output port <accBeenRead> of the instance <MemoryController> is unconnected or connected to loadless signal.
+    Found 16-bit subtractor for signal <GND_1_o_yPixelPos[15]_sub_2_OUT> created at line 63.
+    Found 16-bit adder for signal <xPixelPos[15]_GND_1_o_add_0_OUT> created at line 62.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 Unit <Core_MemCont_VGA> synthesized.
@@ -656,17 +656,17 @@ Top Level Output File Name         : Core_MemCont_VGA.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1588
+# BELS                             : 1589
 #      GND                         : 2
 #      INV                         : 19
 #      LUT1                        : 66
 #      LUT2                        : 55
 #      LUT3                        : 47
-#      LUT4                        : 71
-#      LUT5                        : 216
-#      LUT6                        : 671
+#      LUT4                        : 70
+#      LUT5                        : 217
+#      LUT6                        : 670
 #      MUXCY                       : 157
-#      MUXF7                       : 117
+#      MUXF7                       : 119
 #      MUXF8                       : 32
 #      VCC                         : 2
 #      XORCY                       : 133
@@ -695,14 +695,14 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:             438  out of  18224     2%  
- Number of Slice LUTs:                 1145  out of   9112    12%  
-    Number used as Logic:              1145  out of   9112    12%  
+ Number of Slice LUTs:                 1144  out of   9112    12%  
+    Number used as Logic:              1144  out of   9112    12%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1431
-   Number with an unused Flip Flop:     993  out of   1431    69%  
-   Number with an unused LUT:           286  out of   1431    19%  
-   Number of fully used LUT-FF pairs:   152  out of   1431    10%  
+ Number of LUT Flip Flop pairs used:   1430
+   Number with an unused Flip Flop:     992  out of   1430    69%  
+   Number with an unused LUT:           286  out of   1430    20%  
+   Number of fully used LUT-FF pairs:   152  out of   1430    10%  
    Number of unique control sets:        41
 
 IO Utilization: 
@@ -758,26 +758,26 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'ExternalClk'
   Clock period: 10.329ns (frequency: 96.814MHz)
-  Total number of paths / destination ports: 7239913 / 2172
+  Total number of paths / destination ports: 7237113 / 2172
 -------------------------------------------------------------------------
 Delay:               10.329ns (Levels of Logic = 8)
   Source:            Core/Instruction_30_1 (FF)
-  Destination:       Controller/Ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
+  Destination:       MemoryController/Ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
   Source Clock:      ExternalClk rising
   Destination Clock: ExternalClk rising
 
-  Data Path: Core/Instruction_30_1 to Controller/Ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram
+  Data Path: Core/Instruction_30_1 to MemoryController/Ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDE:C->Q              1   0.447   0.924  Core/Instruction_30_1 (Core/Instruction_30_1)
      LUT5:I0->O           17   0.203   1.028  Core/PS_Address<0>51 (Core/PS_Address<0>5)
-     LUT6:I5->O           21   0.205   1.114  Controller/D/_n0032<23>1 (Controller/D/_n0032)
-     LUT6:I5->O           15   0.205   0.982  Controller/D/Mmux_ReadDataOut231 (Controller/D/Mmux_ReadDataOut231)
-     LUT6:I5->O            6   0.205   0.973  Controller/D/Mmux_ReadDataOut71 (CoreDataOut<14>)
+     LUT6:I5->O           21   0.205   1.114  MemoryController/D/_n0032<23>1 (MemoryController/D/_n0032)
+     LUT6:I5->O           15   0.205   0.982  MemoryController/D/Mmux_ReadDataOut231 (MemoryController/D/Mmux_ReadDataOut231)
+     LUT6:I5->O            6   0.205   0.973  MemoryController/D/Mmux_ReadDataOut71 (CoreDataOut<14>)
      LUT6:I3->O           15   0.205   0.982  Core/PS_Address<0>1 (Core/PS_Address<0>1)
      LUT5:I4->O           33   0.205   1.650  Core/PS_Address<12> (CoreAddress<12>)
-     begin scope: 'Controller/Ram:addra<12>'
+     begin scope: 'MemoryController/Ram:addra<12>'
      LUT5:I0->O            1   0.203   0.579  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/out291 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.ram_ena)
      RAMB16BWER:ENA            0.220          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[27].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram
     ----------------------------------------
@@ -790,19 +790,19 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'ExternalClk'
 -------------------------------------------------------------------------
 Offset:              6.973ns (Levels of Logic = 6)
   Source:            rstBtn (PAD)
-  Destination:       Controller/Ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
+  Destination:       MemoryController/Ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram (RAM)
   Destination Clock: ExternalClk rising
 
-  Data Path: rstBtn to Controller/Ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram
+  Data Path: rstBtn to MemoryController/Ram/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.222   0.944  rstBtn_IBUF (rstBtn_IBUF)
-     LUT6:I0->O            1   0.203   0.827  Controller/D/Mmux_ReadDataOut21 (Controller/D/Mmux_ReadDataOut2)
-     LUT6:I2->O            5   0.203   0.715  Controller/D/Mmux_ReadDataOut25 (CoreDataOut<0>)
+     LUT6:I0->O            1   0.203   0.827  MemoryController/D/Mmux_ReadDataOut21 (MemoryController/D/Mmux_ReadDataOut2)
+     LUT6:I2->O            5   0.203   0.715  MemoryController/D/Mmux_ReadDataOut25 (CoreDataOut<0>)
      LUT4:I3->O            1   0.205   0.808  Core/PS_Address<0>_SW0_SW0 (N100)
      LUT5:I2->O           32   0.205   1.291  Core/PS_Address<0> (CoreAddress<0>)
-     begin scope: 'Controller/Ram:addra<0>'
+     begin scope: 'MemoryController/Ram:addra<0>'
      RAMB16BWER:ADDRA4         0.350          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[31].ram.r/s6_init.ram/TRUE_DP.PRIM18.ram
     ----------------------------------------
     Total                      6.973ns (2.388ns logic, 4.585ns route)
@@ -845,11 +845,11 @@ ExternalClk    |   10.329|         |         |         |
 
 
 Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 13.51 secs
+Total CPU time to Xst completion: 14.02 secs
  
 --> 
 
-Total memory usage is 300860 kilobytes
+Total memory usage is 300944 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    4 (   0 filtered)
