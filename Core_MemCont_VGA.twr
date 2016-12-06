@@ -37,16 +37,16 @@ Setup/Hold to clock ExternalClk
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-JA<4>       |    2.221(R)|      SLOW  |   -0.397(R)|      SLOW  |clk               |   0.000|
-JA<5>       |    2.093(R)|      SLOW  |   -0.082(R)|      SLOW  |clk               |   0.000|
-JA<6>       |    1.495(R)|      FAST  |   -0.461(R)|      SLOW  |clk               |   0.000|
-JC<4>       |    1.560(R)|      SLOW  |   -0.057(R)|      SLOW  |clk               |   0.000|
-JC<5>       |    1.734(R)|      SLOW  |   -0.059(R)|      SLOW  |clk               |   0.000|
-JC<6>       |    1.776(R)|      SLOW  |   -0.383(R)|      SLOW  |clk               |   0.000|
-JD<4>       |    1.934(R)|      SLOW  |   -0.498(R)|      SLOW  |clk               |   0.000|
-JD<5>       |    2.290(R)|      SLOW  |   -0.297(R)|      SLOW  |clk               |   0.000|
-JD<6>       |    2.837(R)|      SLOW  |   -0.976(R)|      SLOW  |clk               |   0.000|
-rstBtn      |    8.864(R)|      SLOW  |   -2.533(R)|      FAST  |clk               |   0.000|
+JA<4>       |    2.397(R)|      SLOW  |   -0.775(R)|      SLOW  |clk               |   0.000|
+JA<5>       |    2.460(R)|      SLOW  |   -0.609(R)|      SLOW  |clk               |   0.000|
+JC<4>       |    2.220(R)|      SLOW  |   -0.179(R)|      SLOW  |clk               |   0.000|
+JC<5>       |    2.000(R)|      SLOW  |   -0.148(R)|      SLOW  |clk               |   0.000|
+JD<4>       |    1.889(R)|      SLOW  |   -0.170(R)|      SLOW  |clk               |   0.000|
+JD<5>       |    2.307(R)|      SLOW  |   -0.407(R)|      SLOW  |clk               |   0.000|
+rstBtn      |    7.677(R)|      SLOW  |   -0.938(R)|      FAST  |clk               |   0.000|
+sdi         |    2.342(R)|      SLOW  |   -1.508(R)|      FAST  |clk               |   0.000|
+sw<0>       |    3.271(R)|      SLOW  |    0.183(R)|      SLOW  |clk               |   0.000|
+sw<1>       |    3.347(R)|      SLOW  |   -0.048(R)|      SLOW  |clk               |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock ExternalClk to Pad
@@ -54,27 +54,31 @@ Clock ExternalClk to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-AN0         |         8.147(R)|      SLOW  |         4.277(R)|      FAST  |clk               |   0.000|
-AN1         |         8.058(R)|      SLOW  |         4.284(R)|      FAST  |clk               |   0.000|
-AN2         |         7.913(R)|      SLOW  |         4.143(R)|      FAST  |clk               |   0.000|
-AN3         |         8.163(R)|      SLOW  |         4.294(R)|      FAST  |clk               |   0.000|
-CA          |         8.598(R)|      SLOW  |         4.287(R)|      FAST  |clk               |   0.000|
-CB          |         8.265(R)|      SLOW  |         4.133(R)|      FAST  |clk               |   0.000|
-CC          |         8.784(R)|      SLOW  |         4.489(R)|      FAST  |clk               |   0.000|
-CD          |         8.786(R)|      SLOW  |         4.403(R)|      FAST  |clk               |   0.000|
-CE          |         8.955(R)|      SLOW  |         4.411(R)|      FAST  |clk               |   0.000|
-CF          |         8.515(R)|      SLOW  |         4.341(R)|      FAST  |clk               |   0.000|
-CG          |         8.718(R)|      SLOW  |         4.248(R)|      FAST  |clk               |   0.000|
-ColorOut<0> |         7.900(R)|      SLOW  |         4.149(R)|      FAST  |clk               |   0.000|
-ColorOut<1> |         7.755(R)|      SLOW  |         4.076(R)|      FAST  |clk               |   0.000|
-ColorOut<2> |         7.618(R)|      SLOW  |         3.981(R)|      FAST  |clk               |   0.000|
+AN0         |         8.205(R)|      SLOW  |         4.316(R)|      FAST  |clk               |   0.000|
+AN1         |         7.917(R)|      SLOW  |         4.164(R)|      FAST  |clk               |   0.000|
+AN2         |         7.722(R)|      SLOW  |         4.007(R)|      FAST  |clk               |   0.000|
+AN3         |         7.919(R)|      SLOW  |         4.150(R)|      FAST  |clk               |   0.000|
+CA          |         8.492(R)|      SLOW  |         4.153(R)|      FAST  |clk               |   0.000|
+CB          |         8.718(R)|      SLOW  |         4.176(R)|      FAST  |clk               |   0.000|
+CC          |         8.580(R)|      SLOW  |         4.322(R)|      FAST  |clk               |   0.000|
+CD          |         8.525(R)|      SLOW  |         4.201(R)|      FAST  |clk               |   0.000|
+CE          |         8.581(R)|      SLOW  |         4.323(R)|      FAST  |clk               |   0.000|
+CF          |         8.499(R)|      SLOW  |         4.238(R)|      FAST  |clk               |   0.000|
+CG          |         8.553(R)|      SLOW  |         4.319(R)|      FAST  |clk               |   0.000|
+ColorOut<0> |         7.973(R)|      SLOW  |         4.187(R)|      FAST  |clk               |   0.000|
+ColorOut<1> |         7.958(R)|      SLOW  |         4.174(R)|      FAST  |clk               |   0.000|
+ColorOut<2> |         7.857(R)|      SLOW  |         4.140(R)|      FAST  |clk               |   0.000|
 ColorOut<3> |         7.764(R)|      SLOW  |         4.085(R)|      FAST  |clk               |   0.000|
-ColorOut<4> |         7.791(R)|      SLOW  |         4.065(R)|      FAST  |clk               |   0.000|
-ColorOut<5> |         7.838(R)|      SLOW  |         4.108(R)|      FAST  |clk               |   0.000|
-ColorOut<6> |         7.721(R)|      SLOW  |         4.080(R)|      FAST  |clk               |   0.000|
-ColorOut<7> |         7.656(R)|      SLOW  |         4.007(R)|      FAST  |clk               |   0.000|
-Hsync       |         8.503(R)|      SLOW  |         4.584(R)|      FAST  |clk               |   0.000|
-Vsync       |         8.586(R)|      SLOW  |         4.643(R)|      FAST  |clk               |   0.000|
+ColorOut<4> |         7.824(R)|      SLOW  |         4.086(R)|      FAST  |clk               |   0.000|
+ColorOut<5> |         7.630(R)|      SLOW  |         3.968(R)|      FAST  |clk               |   0.000|
+ColorOut<6> |         8.056(R)|      SLOW  |         4.304(R)|      FAST  |clk               |   0.000|
+ColorOut<7> |         7.894(R)|      SLOW  |         4.209(R)|      FAST  |clk               |   0.000|
+Hsync       |         8.137(R)|      SLOW  |         4.312(R)|      FAST  |clk               |   0.000|
+Vsync       |         8.111(R)|      SLOW  |         4.289(R)|      FAST  |clk               |   0.000|
+led         |        11.997(R)|      SLOW  |         4.899(R)|      FAST  |clk               |   0.000|
+sclk        |         6.956(R)|      SLOW  |         3.571(R)|      FAST  |clk               |   0.000|
+sdo         |         7.719(R)|      SLOW  |         4.054(R)|      FAST  |clk               |   0.000|
+ss          |         6.990(R)|      SLOW  |         3.593(R)|      FAST  |clk               |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock ExternalClk
@@ -82,18 +86,18 @@ Clock to Setup on destination clock ExternalClk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ExternalClk    |   14.801|         |         |         |
+ExternalClk    |   14.034|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Tue Nov 29 19:41:40 2016 
+Analysis completed Tue Dec 06 16:24:39 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 266 MB
+Peak Memory Usage: 284 MB
 
 
 

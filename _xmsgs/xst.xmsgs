@@ -8,10 +8,7 @@
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\imana\OneDrive\Documents\GitHub\FinalCore\ipcore_dir\RAM.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">RAM</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\imana\OneDrive\Documents\GitHub\FinalCore\Core_MemCont_VGA.v" Line 67: Assignment to <arg fmt="%s" index="1">accBeenRead</arg> ignored, since the identifier is never used
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\FinalCore\Core_MemCont_VGA.v</arg>&quot; line <arg fmt="%s" index="2">56</arg>: Output port &lt;<arg fmt="%s" index="3">accBeenRead</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">MemoryController</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\imana\OneDrive\Documents\GitHub\FinalCore\ACL.v" Line 127: Assignment to <arg fmt="%s" index="1">ledHolder</arg> ignored, since the identifier is never used
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Instruction&lt;11:8&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -20,31 +17,91 @@
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Address&lt;15:15&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\imana\OneDrive\Documents\GitHub\FinalCore\ACL.v</arg>&quot; line <arg fmt="%s" index="2">119</arg>: Output port &lt;<arg fmt="%s" index="3">LED</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">SDATA</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">selData&lt;6:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">selData&lt;9:9&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
 <msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
 <msg type="info" file="Xst" num="3231" delta="old" >The small RAM &lt;<arg fmt="%s" index="1">Mram__n0028</arg>&gt; will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">xEnc/C0_Debouncer/sclk_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;yEnc/C0_Debouncer/sclk_0&gt; &lt;color/C0_Debouncer/sclk_0&gt; </arg>
+<msg type="info" file="Xst" num="3217" delta="new" >HDL ADVISOR - Register &lt;<arg fmt="%s" index="1">LED</arg>&gt; currently described with an asynchronous reset, could be combined with distributed RAM &lt;<arg fmt="%s" index="2">Mram_GND_21_o_GND_21_o_mux_16_OUT</arg>&gt; for implementation on block RAM resources if you made this reset synchronous instead.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">xEnc/C0_Debouncer/sclk_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;yEnc/C0_Debouncer/sclk_1&gt; &lt;color/C0_Debouncer/sclk_1&gt; </arg>
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">txdata_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">SPImaster</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">xEnc/C0_Debouncer/sclk_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;yEnc/C0_Debouncer/sclk_2&gt; &lt;color/C0_Debouncer/sclk_2&gt; </arg>
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">txdata_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">SPImaster</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">xEnc/C0_Debouncer/sclk_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;yEnc/C0_Debouncer/sclk_3&gt; &lt;color/C0_Debouncer/sclk_3&gt; </arg>
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">txdata_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">SPImaster</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">xEnc/C0_Debouncer/sclk_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;yEnc/C0_Debouncer/sclk_4&gt; &lt;color/C0_Debouncer/sclk_4&gt; </arg>
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">txdata_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">SPImaster</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">xEnc/C0_Debouncer/sclk_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;yEnc/C0_Debouncer/sclk_5&gt; &lt;color/C0_Debouncer/sclk_5&gt; </arg>
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">txdata_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">SPImaster</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">xEnc/C0_Debouncer/sclk_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;yEnc/C0_Debouncer/sclk_6&gt; &lt;color/C0_Debouncer/sclk_6&gt; </arg>
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">txdata_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">SPImaster</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">txdata_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">SPImaster</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">txdata_14</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">SPImaster</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">txdata_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">SPImaster</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;txdata_11&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">_ACL/SPI/C1/tx_shift_register_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Core_MemCont_VGA</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">_ACL/SPI/C1/tx_shift_register_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Core_MemCont_VGA</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">_ACL/SPI/C1/tx_shift_register_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Core_MemCont_VGA</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">_ACL/SDATA/LED_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">_ACL/SDATA/LED_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">_ACL/SDATA/LED_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">yEnc/C1_Encoder/EncOut_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Core_MemCont_VGA</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">xEnc/C0_Debouncer/sclk_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;color/C0_Debouncer/sclk_0&gt; &lt;yEnc/C0_Debouncer/sclk_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">xEnc/C0_Debouncer/sclk_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;color/C0_Debouncer/sclk_1&gt; &lt;yEnc/C0_Debouncer/sclk_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">xEnc/C0_Debouncer/sclk_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;color/C0_Debouncer/sclk_2&gt; &lt;yEnc/C0_Debouncer/sclk_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">xEnc/C0_Debouncer/sclk_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;color/C0_Debouncer/sclk_3&gt; &lt;yEnc/C0_Debouncer/sclk_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">xEnc/C0_Debouncer/sclk_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;color/C0_Debouncer/sclk_4&gt; &lt;yEnc/C0_Debouncer/sclk_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">xEnc/C0_Debouncer/sclk_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;color/C0_Debouncer/sclk_5&gt; &lt;yEnc/C0_Debouncer/sclk_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">xEnc/C0_Debouncer/sclk_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;color/C0_Debouncer/sclk_6&gt; &lt;yEnc/C0_Debouncer/sclk_6&gt; </arg>
 </msg>
 
 <msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">DisplayController/counter_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Core_MemCont_VGA</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;VGA/SignalGen/subPixelCount_0&gt; </arg>
